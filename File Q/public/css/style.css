@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Scope+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400&display=swap");
+/*
+font-family: 'Barlow Semi Condensed', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+#FF3F36
+#0E1C71
+#5764FF
+#7883FF
+#6979B5
+*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease;
+}
+
+header {
+    margin: 0rem 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 5.6rem;
+}
+
+nav {
+    font-family: "Poppins", sans-serif;
+}
+
+.nav__ul {
+    list-style: none;
+    display: flex;
+    column-gap: 2.7rem;
+}
+
+.nav__ul a {
+    text-decoration: none;
+    font-size: 1.9rem;
+    color: #6979b5;
+    position: relative;
+}
+
+.nav__ul a:hover {
+    color: #0e1c71;
+    position: ab;
+}
+
+.ul_overview {
+    background-color: #0e1c71;
+    height: 0.2rem;
+    opacity: 0;
+}
+
+.ul_features {
+    background-color: #0e1c71;
+    height: 0.2rem;
+    opacity: 0;
+}
+
+.ul_pricing {
+    background-color: #0e1c71;
+    height: 0.2rem;
+    opacity: 0;
+}
+
+.ul_support {
+    background-color: #0e1c71;
+    height: 0.2rem;
+    opacity: 0;
+}
+
+.buttons a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 1.9rem;
+    margin-left: 1rem;
+    text-decoration: none;
+    background-color: #ff3f36;
+    padding: 0.5rem 2rem;
+    color: #fff;
+    border-radius: 2rem;
+}
+
+.buttons a:hover {
+    background-color: #ff0d00;
+}
+
+main {
+    margin: 0 30rem;
+}
+
+.hero-section {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 73vh;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+}
+
+.hero-title-dark {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 7rem;
+    font-weight: 300;
+    color: #0e1c71;
+}
+
+.hero-title-light {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 7rem;
+    font-weight: 300;
+    color: #5764ff;
+}
+
+.hero-description {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #6979b5;
+}
+
+.hero-sub-heading {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #0e1c71;
+}
+
+.hero-button {
+    margin-top: 1.5rem;
+}
+
+.hero-button a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    background-color: #7883ff;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 4rem;
+    width: 10rem;
+    text-decoration: none;
+}
+
+.hero-button a:hover {
+    background-color: #5462fc;
+}
+
+.features-heading {
+    text-align: center;
+    margin-top: 4rem;
+    height: 10rem;
+}
+
+.features-heading a {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 2.3rem;
+    color: #0e1c71;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-rows: 40rem 40rem 40rem 40rem;
+    row-gap: 5rem;
+    justify-content: center;
+}
+
+.features-card {
+    /* background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); */
+    /* background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 2rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    place-content: center;
+}
+
+.features-card:hover {
+    transform: translateY(-0.5%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+        rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.features-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.features-text h2 {
+    color: #0e1c71;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 4.5rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.features-text p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #6979b5;
+    width: 40rem;
+    margin-top: 1rem;
+}
+
+.features-image-1 {
+    width: 40rem;
+    border-radius: 1rem;
+    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+        rgba(17, 17, 26, 0.05) 0px 8px 32px; */
+}
+
+.features-image-2 {
+    width: 40rem;
+    border-radius: 1rem;
+}
+
+.features-image-3 {
+    width: 38rem;
+    border-radius: 1rem;
+}
+
+.features-image-4 {
+    width: 30rem;
+    border-radius: 1rem;
+}
+
+.divider {
+    height: 20rem;
+}
+
+.divider hr {
+    margin-top: 5rem;
+}
+
+.divider h1 {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    text-align: center;
+    font-size: 6rem;
+    margin-top: 5rem;
+    font-weight: 400;
+    color: #0e1c71;
+}
+
+.pricing_card_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pricing_card {
+    background-color: #ffffff;
+    height: 70rem;
+    width: 40rem;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 0.5fr 1fr 1fr;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.pricing_card:hover {
+    transform: translateY(-0.5%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+        rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.grad {
+    margin: 1rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.price_tier_name {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    font-size: 5rem;
+    letter-spacing: 0.2rem;
+    color: white;
+}
+
+.cost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price_value {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.benefits_heading_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefits_heading {
+    font-family: "Poppins", sans-serif;
+    font-size: 3.2rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
+.tier_benefit_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tier_benefits {
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+}
+
+.cta_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 2rem;
+    margin: 1rem;
+}
+
+.cta_heading a {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+}
+
+.pricing_card_grad_1 {
+    /* background-image: url(/images/free_back.jpg); */
+    background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
+}
+
+.pricing_card_grad_2 {
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+}
+
+.pricing_card_grad_3 {
+    background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+}
+
+.cta_button_1 {
+    background-image: url(/images/mid_back.jpg);
+}
+
+.cta_button_2 {
+    background-image: url(/images/mid_back.jpg);
+}
+
+.cta_button_3 {
+    background-image: url(/images/mid_back.jpg);
+}
+
+.divider_2 {
+    height: 10rem;
+}
+
+footer {
+    background-color: #293241;
+    height: 40rem;
+    position: relative;
+}
+
+footer p {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}

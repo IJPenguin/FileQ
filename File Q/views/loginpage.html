@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+            integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <link rel="stylesheet" href="/css/loginstyle.css" />
+        <title>Login Page</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="login-details-card">
+                <h1>Login</h1>
+                <form>
+                    <div class="txt-field">
+                        <input type="text" id="loginEmail" required />
+                        <label for="username">Email</label>
+                        <input type="password" id="loginPassword" required />
+                        <label for="pas">Password</label>
+                    </div>
+                    <button type="submit" id="loginBtn">Login</button>
+                </form>
+                <div class="sign-up-link">
+                    Not a Member?
+                    <a href="registerpage.html">Join Now!</a>
+                </div>
+            </div>
+            <hr class="divider" />
+            <div class="qr-code-conatiner">
+                <div id="qrcode"></div>
+                <h2>Scan QR on FileQ App</h2>
+            </div>
+        </div>
+        <img
+            src="/images/Nav-File-Q-Transparent.png"
+            alt="fileq"
+            class="logo"
+            id="lag"
+        />
+        <script src="/scripts/loginauth.js" type="module"></script>
+    </body>
+</html>

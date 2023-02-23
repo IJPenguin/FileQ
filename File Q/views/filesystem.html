@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/filesystem.css" />
+        <title>File Q | Landing</title>
+    </head>
+    <body>
+        <header>
+            <a href="#"
+                ><img
+                    class="logo"
+                    src="/images/Nav-File-Q-Transparent.png"
+                    alt="logo"
+            /></a>
+            <div class="nav-list">
+                <nav>
+                    <ul class="nav__ul">
+                        <li>
+                            <a href="#features-link" class="features"
+                                >Storage - 50%
+                                <div class="ul_features"></div
+                            ></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="id">
+                <h2 class="username" id="username">UserName</h2>
+            </div>
+        </header>
+        <body>
+            <main>
+                <div class="heading-container">
+                    <hr />
+                    <h1 class="main-heading">Your Files</h1>
+                </div>
+                <div class="upload-container">
+                    <form id="uploadForrm" enctype="multipart/form-data">
+                        <input
+                            type="file"
+                            id="myFiles"
+                            accept="image/*"
+                            multiple
+                        />
+                        <a href="http://localhost:3500/" class="upld-btn">Upload</a>
+                    </form>
+                </div>
+                <div class="files">
+                    <div class="file">
+                        <img
+                            src="/images/file-icon.png"
+                            alt="file"
+                            class="file-img"
+                        />
+                        <div class="file-name">
+                            <h3>Dsa Course</h3>
+                        </div>
+                        <div class="file-size">
+                            <h3>50 GB</h3>
+                        </div>
+                        <div class="file-date">
+                            <h3>1/2/2023</h3>
+                        </div>
+                    </div>
+                    <div class="file">
+                        <img
+                            src="/images/file-icon.png"
+                            alt="file"
+                            class="file-img"
+                        />
+                        <div class="file-name">
+                            <h3>Study Material</h3>
+                        </div>
+                        <div class="file-size">
+                            <h3>File Size</h3>
+                        </div>
+                        <div class="file-date">
+                            <h3>1/2/2023</h3>
+                        </div>
+                    </div>
+                    <div class="file">
+                        <img
+                            src="/images/file-icon.png"
+                            alt="file"
+                            class="file-img"
+                        />
+                        <div class="file-name">
+                            <h3>Screen Shots</h3>
+                        </div>
+                        <div class="file-size">
+                            <h3>File Size</h3>
+                        </div>
+                        <div class="file-date">
+                            <h3>1/2/2023</h3>
+                        </div>
+                    </div>
+                    <div class="file">
+                        <img
+                            src="/images/file-icon.png"
+                            alt="file"
+                            class="file-img"
+                        />
+                        <div class="file-name">
+                            <h3>Assignments</h3>
+                        </div>
+                        <div class="file-size">
+                            <h3>File Size</h3>
+                        </div>
+                        <div class="file-date">
+                            <h3>1/2/2023</h3>
+                        </div>
+                    </div>
+                    <div class="file">
+                        <img
+                            src="/images/file-icon.png"
+                            alt="file"
+                            class="file-img"
+                        />
+                        <div class="file-name">
+                            <h3>Recordings</h3>
+                        </div>
+                        <div class="file-size">
+                            <h3>File Size</h3>
+                        </div>
+                        <div class="file-date">
+                            <h3>1/2/2023</h3>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </body>
+        <footer>
+            <img
+                src="/images/File Q Logo Transparent.png"
+                alt=""
+                style="height: 30rem; margin-left: 45%"
+            />
+            <p class="copyright">©File Q 2022-23</p>
+        </footer>
+        <script src="/scripts/filesystem.js" type="module"></script>
+        <!-- <script>
+            const form = document.getElementById("uploadForm");
+            const sendFiles = async () => {
+                const myFiles = document.getElementById("myFiles").files;
+                const formData = new FormData();
+                Object.keys(myFiles).forEach((key) => {
+                    formData.append(myFiles.item(key).name, myFiles.item(key));
+                });
+                const response = await fetch("http://localhost:3000/upload", {
+                    method: "POST",
+                    body: formData,
+                });
+
+                const json = await response.json();
+                console.log(json);
+            };
+
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                sendFiles();
+            });
+        </script> -->
+    </body>
+</html>

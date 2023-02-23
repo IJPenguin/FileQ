@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+            integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <link rel="stylesheet" href="/css/registerstyle.css" />
+        <title>Login Page</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="register-details-card">
+                <h1>Register</h1>
+                <form>
+                    <div class="txt-field">
+                        <input type="text" id="loginName" required />
+                        <label for="username">Name</label>
+                        <input type="number" id="loginPhNumber" required />
+                        <label for="pas">Phone Number</label>
+                        <input type="text" id="loginUsername" required />
+                        <label for="username">Username</label>
+                        <input type="text" id="loginEmail" required />
+                        <label for="username">Email</label>
+                        <input type="password" id="loginPassword" required />
+                        <label for="pas">Password</label>
+                    </div>
+                    <button type="submit" id="loginBtn">Register</button>
+                </form>
+            </div>
+        </div>
+        <script src="/scripts/register.js" type="module"></script>
+    </body>
+</html>
